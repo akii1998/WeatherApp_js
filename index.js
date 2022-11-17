@@ -25,8 +25,6 @@ function addWeatherToPage(data) {
 
     const weather = document.createElement("div");
     weather.classList.add("weather");
-{/* <img src=https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png /> */}
-{/* <img src=https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png /> */}
     weather.innerHTML = `
         <h5>
         <p>Weather Details</p>
@@ -46,9 +44,6 @@ function addWeatherToPage(data) {
 
 function KtoC(K) {
     return Math.floor(K - 273.15);
-}
-function KtoC1(K){
-    return Math.floor(K -273.15)
 }
 
 form.addEventListener("submit", (e) => {
