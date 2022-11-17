@@ -18,7 +18,6 @@ async function getWeatherByLocation(city) {
 
 function addWeatherToPage(data) {
     const temp = KtoC(data.main.temp);
-    const Max_temp=KtoC1(data.main.temp_max)
     const cityName=data.name;
     const humdity=data.main.humidity;
     const wind =data.wind.speed;
