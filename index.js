@@ -8,7 +8,7 @@ const url = (city) =>
     `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}`;
 
 async function getWeatherByLocation(city) {
-    const resp = await fetch(url(city), { origin: "cors" });
+    const resp = await fetch(url(city));
     const respData = await resp.json();
 
     console.log(respData);
